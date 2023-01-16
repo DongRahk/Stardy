@@ -1,0 +1,68 @@
+/* https://fonts.googleapis.com/icon?family=Material+Icons 내용 */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v139/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+/*---------------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 전체공통스타일: 상하간격없는 박스적용 */
+}
+body{
+    background-color: darkslateblue; /* 전체화면배경색상*/
+}
+.wrap{ /* 내용 정중앙에 위치하기 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /*보이는 화면의 중앙 */
+    color: white; /*글씨색상*/
+    text-align: center;
+}
+.material-icons{
+   font-size: 10rem;
+}
+.lg-text{
+    font-size: 2rem;
+    font-weight: bold; /*폰트 굵기*/
+    margin-bottom: 5px; /*아래 여백 띄우기*/
+}
+.sm-text{
+    font-size: 1.5rem;
+}
+#dynamic{
+    position: relative;
+    display: inline-block; /*글씨숫자 변동시 같이 크기가 변동됨*/
+}
+#dynamic::after{ /* id dynamic끝에 가상 이미지 만들기 */
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 4px;
+    height: 100%;
+    background-color: #fff;
+}
+#dynamic.active::after{ /*class가 active이면 커서모양이 사라짐*/
+    display: none;
+}

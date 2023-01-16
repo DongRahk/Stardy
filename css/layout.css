@@ -1,0 +1,45 @@
+@import url(/css/reset.css);
+/* 리셋파일 넣기 */
+h1{
+    background-color: brown;
+    /* 위치고정(틀고정) */
+    position: sticky;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 3cm;
+}
+#s1 ul{
+    background: yellow;
+    height: 300px;
+    position: relative;
+    width: 1000px;
+    left: 30px;
+    top: 50px;
+    /* 부모박스를 한도로 삼아 위치표시하라 top bottom left right */
+}
+    #s1 li:nth-child(1){
+        background:red;
+        /* relative=>원래위치에서 이동 */
+        position: relative;
+        left: 50px;
+        top: 30px;
+    }
+    #s1 li:nth-child(2){
+        background:rgb(0, 255, 47);
+        /* 위치지정 기본 static,보여주는 위치고정 absolute */
+        position: absolute;
+        left: 290px;
+    --bottom: 0px;
+        width: 20px;
+        height: 100%;
+    }
+    #s1 li:nth-child(3){
+        background:rgb(93, 0, 255);
+        /* 화면기준 고정위치 fixed */
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+        width: 100%;
+        height: 50px;
+    }

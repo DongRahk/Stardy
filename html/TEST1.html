@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap" class="fixed">
+        <div id="container">
+            <h2>LOE051 A,Q 약품 사용 등록</h2>
+            <div class="searchWrap">
+                <div class="searchTable">
+                    <table>
+                        <caption></caption>
+                        <colgroup>
+                            <col style="width:12%">
+                            <col>
+                            <col style="width:12%">
+                            <col style="width:18%">
+                            <col style="width:12%">
+                            <col style="width:18%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>일자</th>
+                                <td>
+                                    <span class="date"><input type="text" title="일자"></span>
+                                </td>
+                                <th>조</th>
+                                <td>
+                                    <div class="selectbox">
+                                        <span>오전조</span>
+                                        <select>
+                                            <option value="">오전조</option>
+                                            <option value="">오후조</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <th>설비</th>
+                                <td>
+                                    <div class="selectbox">
+                                        <span>A1001</span>
+                                        <select>
+                                            <option value="">A1001</option>
+                                            <option value="">E1177</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="btnArea">
+                    <a href="#" class="btn btnBlack"><span class="icoSearch">조회</span></a>
+                    <a href="#" class="btnIco btnHelp">도움말</a>
+                    <a href="#" class="btn btnOrange"><span class="icoSave">저장</span></a>
+                    <a href="#" class="btnIco btnClose">페이지 닫기</a>
+                    
+                </div>
+            </div>
+            <div class="top_radio_wrap">
+                <div class="radio_wrap">
+                    <input type="radio" id="inpRadio" name="rr">
+                    <label for="inpRadio"><em>전체조회</em> </label>
+                </div>
+                <div class="radio_wrap">
+                    <input type="radio" id="inpRadio2" name="rr">
+                    <label for="inpRadio2"><em></em>대상조회</label>
+                </div>
+            </div>	
+        </div>
+    </div>
+    <div id="scroll_wrap" class="small2">
+        <div class="content">
+            <div class="cont_wrap">
+                <div class="table_wrap">
+                    <table>
+                        <caption></caption>
+                        <colgroup>
+                            <col style="width:5%;">
+                            <col>
+                            <col style="width:10%">
+                            <col style="width:15%">
+                            <col style="width:10%">
+                            <col style="width:15%">
+                            <col style="width:10%">
+                            <col style="width:15%">
+                        </colgroup>
+                        <tbody>
+                            <tr class="line_m">
+                                <th rowspan="2">No</th>
+                                <th rowspan="2">규격</th>
+                                <th colspan="2">약품</th>
+                                <th colspan="2">약품</th>
+                                <th colspan="2">약품</th>
+                            </tr>
+                            <tr class="line_m">
+                                <th>약품코드</th>
+                                <th>Lot No</th>
+                                <th>약품코드</th>
+                                <th>Lot No</th>
+                                <th>약품코드</th>
+                                <th>Lot No</th>
+                            </tr>
+                            <tr class="line_m">
+                                <td class="grey_bg">10</td>
+                                <td class="grey_bg">CQP45T010</td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="btn_plus_wrap">
+                <div class="btn_wrap">
+                    <button class="btn_plus" type="button"></button>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

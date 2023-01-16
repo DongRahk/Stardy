@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <link rel="stylesheet" href="./style.css">  
+  
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  
+<script src="https://kit.fontawesome.com/2d323a629b.js"   
+        crossorigin="anonymous"></script>  <!-- 아이콘 사용 페이지-->
+<script src="./main.js" defer> /* defer 로딩후작동방지 */
+   /* 아이콘바 클릭시 메뉴보이도록 이벤트 처리 */
+</script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <i class="fab fa-accusoft" ></i>  <!--아이콘표시-->
+            <a href="https:/fontawesome.com">DreamCoding</a>
+        </div>
+        <ul class="navbar_menu"> <!--(li>a)*5-->
+            <li><a href="">Home</a></li>
+            <li><a href="">Galley</a></li>
+            <li><a href="">Weddings</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Bookings</a></li>
+        </ul>
+        <ul class="navbar_icons">
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-facebook"></i></li>
+            <li><i class="fab fa-google"></i></li>
+        </ul>
+        <a href="#" class="navbar_togleBtn"> <!-- #=>반응없도록만들때-->
+            <i class="fas fa-bars"></i> <!--hambuger메뉴표시아이콘-->
+        </a>
+    </nav>
+    
+</body> <!-- 전체영역 사용 -->
+</html>

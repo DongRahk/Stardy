@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태그설명</title>
+</head>
+<body>
+    <h1>제목태그 h6까지</h1>
+    <p>문단 p태그간 공백줄생성</p>
+    <hr> <!--선표시-->
+    <p>두개이상   공백표시 &nbsp;&nbsp;
+        줄바꿈<br> 
+        <strong>엔터와스페이스는</strong> 공백하나만 
+        <b>적용된다.</b> <!--굵은글씨-->
+        <em>강조태그 이탤릭체로 기울여표시
+            <mark>형광색바탕표시</mark>
+
+        </em>
+    </p>
+    <img src="/button.jpg" alt="버튼" title="버튼" width="50px" 
+    height="30px" >
+    <img src="https://image.kmib.co.kr/online_image/2020/1030/202010301858_23110924162199_1.jpg" alt="인터넷주소 나무"
+      width="100" height="100" title="tree">
+    <p>컨테이너태그(콘텐츠내용구분,공통스타일적용)=>
+        div 블록레벨컨테이너(영역구분) span 인라인컨테이너(단어구분)
+        title 그림캡션 alt 그림오류시보여지는 문자
+        식별자 전역속성 id   class 시작되는 태그에 추가
+    </p>
+    <div class="컨테이너" id="종류">
+        <span>블럭레벨</span><span>인라인 </span>
+    </div>
+    <p>링크 => a태그 href "이동파일이나web site"
+        <a href="https://www.naver.com" target="_blank">네이버로 갑시다 이미지가능</a>
+     target _blank 새탭에서 열기 _self 현재탭에서열기
+     전화걸기 "tel:010-1234-5678" target="_self"
+     메일발송 "mailto:1234@naver.com" target="_blank"
+     <br>
+     <a href="tel:010-3076-3304" target="_self">전화걸기앱연결</a>
+     <br>
+     <a href="mailto:doragi519@gmail.com" target="_blank">메일발송 메일발송앱연결</a>
+    <br>
+    목록 -블록레벨요소 
+    <ul>
+        <li>토끼</li>
+        <li>다람쥐</li>
+        <li>청설모</li>
+    </ul>
+    <ol>
+        <li><mark>html</mark></li>
+        <li>css</li>
+        <li>javascript</li>
+        <li>nodejs</li>
+    </ol>
+    <br>
+    값을 입력받는 입력태그 -단일태그<br>
+    <input name="text" type="text" maxlength="10" placeholder="메시지를 입력하세요"/><br>
+    <input name="ntn" type="button" value="push"><br>
+    <input name="col" type="color">색을고르세요<br>
+    <input name="score" type="range" max="100" min="0" step="10"><br>
+    <input name="birth" type="date"/><br>
+    </p>
+    <p>
+        <br>
+        multiple표시시 여러개선택용 ctrl누르고 선택,selected=>지정된값표시,placeholder=>안내팁표시</br>
+        <select name="cafe" multiple>
+            <option value="star">pk</option>
+            <option value="bean">freekick</option>
+            <option value="ida" selected>중거리패스</option>
+            <option value="pacu">리프팅</option>
+            <option value="pacu1">30M드리블</option>
+            <option value="pacu2">1대1숏게임</option>
+        </select>
+        <br>
+        <textarea name="letter" id="" cols="30" rows="10" placeholder="입력하세요"></textarea>
+        <br>form 태그:입력값을 서버로보내기위해 사용<br>
+        <form action="example.php" method="POST">  <!-- action=>입력값을 전송할 서버의 url ,method=>전송방식 GET 또는 POST-->
+            <input type="text" placeholder="아이디" name="id">
+            <br>
+            <input type="text" placeholder="패스워드" name="pw">
+            <select name="lang" id="">
+                <option value="eng">영어</option>
+                <option value="chi">중국어</option>
+                <option value="kor" selected>한국어</option>
+            </select>
+            <input type="submit" value="로그인"> <!-- 버튼 -->
+
+        </form>
+        <br>
+
+    </p>
+
+
+</body>
+</html>

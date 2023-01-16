@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>데모2</title>
+</head>
+<body>
+	hello world<br/>
+	<script type="text/javascript">
+		function entro(){
+			var id = prompt('아이디를 입력하세요');
+		if(id=='eg'){
+			var password = prompt('패스워드를 입력하세요');
+			if(password=='1111'){
+				alert('로그인됐습니다'+id+'님 반갑습니다');
+			}else{
+				alert('비밀번호가 다릅니다');
+			}
+			
+		}else{
+			alert('아이디 불일치');
+		
+		}
+   }
+ entro(); //함수 실행 
+ function add1(){
+ 	 var i = 0;
+ while( i < 10){
+ 	document.write(i+"<br/>");
+ 	i=i+1;
+ 	i++;
+ 	}		 
+ } 
+ add1();
+
+function add2(){
+for (var i = 0; i < 10; i++) {
+	if(i === 5){
+		break; 
+	//	continue; 
+	}
+	document.write(i);
+	}
+}
+add2();
+
+ document.write("메인화면에 출력<br/>");
+
+function get_arguement(arg){
+	return arg*100;
+}
+alert(get_arguement(100));
+alert(get_arguement(50));
+
+var member = ['eg','dff','rrr'];
+document.write(member+'<br/>',member[0],member[1],member[2]);
+
+function get_members(){
+	return ['ee','wer','fhf'];
+}
+var members = get_members();
+for (var i = members.length - 1; i >= 0; i--) {
+document.write(members[i].toUpperCase()+'<br/>'); //대문자로
+}
+ member.push('dfg'); //뒤쪽에 값 추가
+ member.unshift('ddf'); //앞쪽에 값 추가
+ member.splice(1,0,'ree'); // 1번째 앞에 추가
+ member.splice(1,1,'sdf','ddd'); // 1번째 1개 삭제후 추가
+
+ member.concat('frr','fsd'); //여러개 값 추가
+ //OBJECT 객체 (KEY,VALUE)
+ var grades = {'egoing':10,'k8805':80,'sorio':90};
+ for(key in grades){
+ 	document.write('key: '+key+' value: '+grades[key]+'<br/>'); //grades[key] => key에 대응되는 value 값을 가져온다 
+ }
+
+//console.log(grades[key]);
+document.write(grades[key]); //90
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+ul{
+    display: flex;
+    padding: 0;
+    list-style-type:none;
+    height: 200px;
+    border: 5px solid crimson;
+    /* 가로 정렬,여백 기능 */
+    /* justify-content: space-around ;
+    /* 세로 정렬 기능 */
+    /* align-items: center;
+    /* 화면부족시(교차축) 세로로 균등배열 기능 align*/
+    /* flex-wrap: wrap;
+    align-content: space-around; */
+    /* flex-wrap: wrap; */ 
+    /* flex-flow: row-reverse wrap; 위두기능을 한번에*/
+}
+    li{
+        background-color: beige;
+    }
+    /* li:nth-child(3){
+        align-self: flex-end
+    }; */
+    li:nth-child(2n){
+        background-color: rgb(134, 24, 24);
+    }
+    li:nth-child(2){
+        /* 반응형웹사용시 적용,기본값 0,여분의공간이 있을떄 항목길이가 숫자*여분의 공간 증가(화면가용내에서) */
+        flex-grow: 1;
+         /* 기본값 1,화면축소시 숫자비율만큼 더 축소 */
+        flex-shrink:2 ;
+        /* flex-grow flex-shrink flex-basis 한번에 적용
+        flex-grow 기본값 0 늘어나지 않는 설정
+        flex-shrink 기본값 1 줄어드는 설정
+        flex-basis 기본값 auto 내용물크기에 맞추어 크기설정
+         200px크기 고정의미 */
+        flex: 0 0 200px;
+    }
+    li:nth-child(3){
+        /* 항목길이가 숫자*여분의 공간 증가(화면가용내에서) */
+        flex-grow: 1;
+        flex-shrink: 3;
+        flex-basis: 100px;
+
+    }
+    /* 아이템 보이는 순서 변경 지정 오름차순으로 보여진다 */
+    li:nth-child(1){order: 3;}
+    li:nth-child(2){order: -1;}
+    li:nth-child(3){order: 5;}
+    li:nth-child(4){order: 2;}
+    li:nth-child(5){order: 1;}

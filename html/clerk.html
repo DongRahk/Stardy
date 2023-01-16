@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시계</title>
+    <link rel="stylesheet" href="../css/clerk.css">
+</head>
+<body>
+    <div class="container1">
+        <h1 >12:30:30</h1>
+        <h2 style="color: white;">현재시각</h2>
+        <button id="bt_stop">STOP</button>
+        <button id="bt_go">GO</button>
+    </div>
+    <p style="color: red; ">html문서내 <span style="color: blue; font-size: 32px; border: 1px green solid; display:block ">
+         css문서</span> 구현하려면 style 명령어 사용 </p>
+    <h2 style="display:none ; display: inline-block;height: 50px;width: 300px;text-align:center;border: 2px white solid;">디스플레이</h2>
+
+    <style> 
+        p{background-color: yellow;} /* html문서내 style 적용 */
+        .div2{border: 2px white solid;color: yellow;padding: 10px;margin: 0px;width: 500px;height: 30px;
+              padding: 10px 20px 30px 40px;box-sizing: border-box;}
+        .div3{box-sizing: border-box; margin: 50px 0px;
+            width: 300px;height: 300px;
+            border: 1px solid rebeccapurple;
+            background-color: blue;
+            background-image: url(../button.jpg);background-size:contain; background-repeat: no-repeat;background-position: left top;}
+        #float1{width: 130px;height: 20px;
+            background-color: #fff;
+            float: left;}
+        #float2{width: 130px;height: 20px;
+            background-color: #fff;
+            float: right}
+        p.p1{clear:both;background-color:  #fff;}
+        .div4{
+            width: 100px;height: 100px;background-color: #fff;
+            position: relative; top: 100px;left: 100px;
+        }
+        .div5{width: 200px;height: 200px;
+            background-color: yellow;
+            position: relative;
+            border: 1px solid black;}
+        div>.div6#aaa{width: 100px;height: 100px;background-color: #fff;
+            position: absolute;top: 100px;}
+        .div7{ display: flex; flex-direction: row;
+        }
+        .item{color: #fff;width: 50px;height: 50px;background-color: tomato;}
+        .container{
+            display: flex;
+            width: 300px; height: 300px; border: 1px solid wheat;
+            justify-content: space-between; /*주축(횡방향)배치 */
+            align-items: center; /*교차축(종방향)배치 */
+            flex-wrap: nowrap;
+        }
+        .sel{align-self: flex-start;} /*한 class만 개별 배치 */
+        [class] {color: blue;}
+        [class *= "div2"] {color: red;}
+        [class $= "4"] {color: rgb(227, 222, 232);}
+        [id ^= "flo"] {color: green;}
+        .div2+.div3{color: red;}
+        [type="button"]{
+            width: 100px; height: 30px; background-color: #fff; color: blue;border: none;border-radius: 8px;
+        }
+        [type="button"]:hover{
+            background-color: yellow;
+        }
+        [type="button"]:active{
+            background-color: red;
+        }
+        input#text1:focus{
+            background-color: blue;
+        }
+        input:disabled{
+            background-color: gray;
+        }
+        .item:nth-child(3){
+            color: red;
+        }
+        .boxgroup{ display: flex;
+            justify-content: space-around;
+            width: 300px;height: 50px;
+
+        }
+        .box{
+              width: 50px;height: 50px;background-color: #fff;
+        }
+        .box:nth-child(2n-1){
+            background-color: red;
+        }
+        #p1::first-line{
+            color: rgb(218, 112, 14);
+        }
+        p::first-letter{
+            font-size: 30px;
+        }
+        li::marker{
+            color: #999;
+        }
+        input::placeholder{
+            font-size: 20px; color: red;
+        }
+        #p1::before{
+            content: "룰루랄랄@@@@";
+        }
+        #p1::after{
+            content: "end*****";
+            font-weight: 900;
+            color: blue;
+        }
+    </style>
+    <div class="div2">
+        요소의 켄텐츠
+    </div>
+    <div class="div3">
+        백그라운드
+    </div>
+    <div id="float1">
+     t-code
+    </div>
+    <div id="float2">
+     도움말
+    </div>
+    <div style="color: white;">제목:float사용법</div>
+    <p class="p1">플롯기능 해제 적용 clear</p>
+    <div class="div4">
+      positioneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+    </div>
+    <div class="div5"></div>
+    <div class="div5">
+        <div class="div6" id="aaa">wwww</div>
+        <p>ppp</p>
+    </div>
+    <div class="div7">
+        <div class="item">하나</div>
+        <div class="item">둘</div>
+        <div class="item">셋</div>
+        <div class="item">넷</div>
+    </div>
+    <div class="container">
+        <div class="item">하나</div>
+        <div class="item sel">둘</div>
+        <div class="item">셋</div>
+        <div class="item">넷</div>
+    </div>
+    <input type="button" value="버튼">
+    <input type="text" id="text1" placeholder="입력하세요" disabled> /*disabled=>비활성화 처리*/
+    <div class="boxgroup">
+        <div class="box">1번</div>
+        <div class="box">2번</div>
+        <div class="box">3번</div>
+        <div class="box">4번</div>
+        <div class="box">5번</div>
+    </div>  
+    <p id="p1">
+        퍼스트라인 페스트 레터---------
+        퍼스트라인 페스트 레터---------
+        퍼스트라인 페스트 레터---------
+        퍼스트라인 페스트 레터-----------
+        퍼스트라인 페스트 레터
+    </p>
+    <ul>
+        <li>강아지</li>
+        <li>고양이</li>
+        <li>원숭이</li>
+        <li>돼지</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+[
+    {
+        "word":"Eat",
+        "definition":["먹다","식사를 하다"],
+        "examples":[
+            {
+                "sentence": "I eat an apple",
+                "definition": "사과를 먹는다"
+            },
+            {
+                "sentence": "I can eat that",
+                "definition":"나는 먹을수 있다"
+            }
+        ]
+    },
+    {
+        "word": "Learn",
+        "definition":["배우다","학습하다"],
+        "examples":[
+            {
+                "sentence": "I learn English",
+                "definition":"나는 영어를 배운다"
+            },
+            {
+                "sentence": "I can learn English",
+                "definition":"나는 영어를 배울수 있다"
+            }
+        ]
+    }
+]

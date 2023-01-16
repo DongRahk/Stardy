@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>HANKOOK driving emotion(Web Order system)</title>
+<meta name="keywords" content="Hankooktire HR Information System">
+<meta name="description" content="Hankooktire HR Information System">
+<meta name="HandheldFriendly" content="True">
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="../css/style.css">
+<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+<div id="wrap" class="fixed">
+	<div id="container">
+		<h2>LOE021 성형 LTR 등록</h2>
+		<div class="searchWrap">
+			<div class="searchTable">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col style="width:12%">
+						<col>
+						<col style="width:12%">
+						<col style="width:18%">
+						<col style="width:12%">
+						<col style="width:18%">
+					</colgroup>
+					<tbody>
+						<tr class="line_m">
+							<th>일자</th>
+							<td>
+								<span class="date"><input type="text" title="일자"></span>
+							</td>
+							<th>조</th>
+							<td>
+								<div class="selectbox">
+									<span>오전조</span>
+									<select>
+										<option value="">오전조</option>
+										<option value="">오후조</option>
+									</select>
+								</div>
+							</td>
+							<th>설비</th>
+							<td>
+								<div class="selectbox">
+									<span>H114C</span>
+									<select>
+										<option value="">H114C</option>
+										<option value="">E117R</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>순번</th>
+							<td>
+								<div class="selectbox">
+									<span>20</span>
+									<select>
+										<option value="">20</option>
+										<option value="">17</option>
+									</select>
+								</div>
+							</td>
+							<th>규격</th>
+							<td colspan="3">
+								<div class="txt_wrap txt_wrap2">
+									<span class="txt">HX215/60R16V&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;04K406 LBH--
+									</span>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btnArea">
+				<a href="#" class="btn btnBlack"><span class="icoSearch">조회</span></a>
+				<a href="#" class="btnIco btnHelp">도움말</a>
+				<a href="#" class="btn btnOrange"><span class="icoSave">저장</span></a>
+				
+				<!-- 181015 수정 -->
+				<a href="gnb.html?layout=1" class="btnIco btnClose">페이지 닫기</a>
+				<!-- //181015 수정 끝-->
+			</div>
+			<div class="radioWrap">
+				<ul class="btnRadio">
+					<li class="on"><a class="txt_m" href="#">전체조회</a></li>
+					<li><a class="txt_m btn_choose" href="#">대상조회</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="scroll_wrap">		
+	<div class="content">
+		<div class="cont_wrap">
+			<div class="table_wrap">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col style="width:4%">
+						<col>
+						<col style="width:12%">
+						<col style="width:8%">
+						<col style="width:6%">
+						<col style="width:6%">
+						<col style="width:8%">
+						<col style="width:8%">
+						<col style="width:10%">
+						<col style="width:10%">
+						<col style="width:5%">
+						<col style="width:10%">
+					</colgroup>
+					<tbody>
+						<tr class="line_m">
+							<th rowspan="2">No</th>
+							<th rowspan="2">규격</th>
+							<th rowspan="2">B/T</th>
+							<th rowspan="2">바코드<br>표기</th>
+							<th colspan="2">마킹상태</th>
+							<th rowspan="2">고무두께<br>(mm)</th>
+							<th rowspan="2">DIP투입<br>실적</th>
+							<th rowspan="2" colspan="3">리쿱 투입실적<br>(KP OMS)</th>
+							<th rowspan="2">부적합<br>파렛트</th>
+						</tr>
+						<tr class="line_m">
+							<th>활자</th>
+							<th>B/T</th>
+						</tr>
+						<tr class="line_m">
+							<td rowspan="2" class="grey_bg">10</td>
+							<td class="grey_bg">CQP45T010</td>
+							<td>
+								<div class="inp_two_wrap">
+									<input class="inp_two" type="text">
+									<span>~</span>
+									<input class="inp_two" type="text">
+								</div>
+							</td>
+							<td>
+								<div class="selectbox">
+									<span>자동</span>
+									<select>
+										<option value="">자동</option>
+										<option value="">수동</option>
+									</select>
+								</div>
+							</td>
+							<td>
+								<div class="selectbox">
+									<span>OK</span>
+									<select>
+										<option value="">OK</option>
+										<option value="">NG</option>
+									</select>
+								</div>
+							</td>
+							<td>
+								<div class="selectbox">
+									<span>OK</span>
+									<select>
+										<option value="">OK</option>
+										<option value="">NG</option>
+									</select>
+								</div>
+							</td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td class="grey_bg">작업 특이사항</td>
+							<td colspan="10"><input type="text"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup_wrap">
+	<div class="popup">
+		<button class="btn_close"></button>
+		<h1 class="popup_tit">Recoup 투입실적</h1>
+		<div class="table_wrap">
+			<table>
+				<caption></caption>
+				<colgroup>
+					<col style="width:30%">
+					<col>
+					<col style="width:15%">
+				</colgroup>
+				<tbody>
+					<tr class="line_m line_up">
+						<th>고무</th>
+						<th>투입일자</th>
+						<th>투입조</th>
+					</tr>
+					<tr class="line_m">
+						<td><input type="text"></td>
+						<td>
+							<span class="date"><input type="text" title="일자"></span>
+						</td>
+						<td>
+							<div class="selectbox">
+								<span>A</span>
+								<select>
+									<option value="">A</option>
+									<option value="">B</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr class="line_m">
+						<td><input type="text"></td>
+						<td>
+							<span class="date"><input type="text" title="일자"></span>
+						</td>
+						<td>
+							<div class="selectbox">
+								<span>A</span>
+								<select>
+									<option value="">A</option>
+									<option value="">B</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr class="line_m">
+						<td><input type="text"></td>
+						<td>
+							<span class="date"><input type="text" title="일자"></span>
+						</td>
+						<td>
+							<div class="selectbox">
+								<span>B</span>
+								<select>
+									<option value="">A</option>
+									<option value="">B</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr class="line_m">
+						<td><input type="text"></td>
+						<td>
+							<span class="date"><input type="text" title="일자"></span>
+						</td>
+						<td>
+							<div class="selectbox">
+								<span>A</span>
+								<select>
+									<option value="">A</option>
+									<option value="">B</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr class="line_m">
+						<td><input type="text"></td>
+						<td>
+							<span class="date"><input type="text" title="일자"></span>
+						</td>
+						<td>
+							<div class="selectbox">
+								<span>B</span>
+								<select>
+									<option value="">A</option>
+									<option value="">B</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="popup_btn_wrap">
+			<button type="submit" class="btn_save">저장</button>
+		</div>
+	</div>
+</div>	
+</body>
+</html>

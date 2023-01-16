@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<ul>
+		<li>egoing</li>
+		<li>graphy</li>
+		<li>sophy</li> 
+	
+	<script type="text/javascript">
+		var grades = {'egoing':10,'k8805':90,'sorio':80}; //객체형 { : }사용
+		for (var name in grades){
+			document.write('<li>key : '+name+'  value: '+grades[name]+'</li>'); //html코드 삽입 
+		}
+
+		var arr = ['a','b','c'] //배열형 [ ] 사용
+		for(var name in arr){
+			document.write(name); //index
+			document.write(arr[name]); //value출력
+		}
+
+		var grad = {
+			'list' : {'egoing':10,'k8805':90,'sorio':80},
+			'show' : function(){
+				for(var name in this.list){
+					document.write('<br/>'+name,'   '+this.list[name]);
+				}
+			}
+		}
+	//	grad.show();
+	</script>
+</ul> 
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <!-- 상대경로=> / 상위폴더  ./ 현재폴더   ../ 상위폴더  ../../ 차상위폴더 -->
+    <!--  절대경로 => / 루트폴더  -->
+    <!--web문서 작성 절차 ; 컨텐트 채우기 마크업 블럭잡기
+     제목 <h~> <h1>..<h6> <hgroup> 
+    목록 <ul> unordered list <li> list item 
+         <ol> ordered list  <li> list item
+        <dl> definition list <dt> define term <dd> define description
+         <menu> <menuitem>
+    문장 <section> <p>
+    표 <table> <tr> table row  <td> table datacell
+    입력폼 <form> <legend>폼제목 <label> 항목명 <input type=text> 입력란 fieldset 폼영역라인표시 <input type=checkbox>체크박스 
+                        <input type=radio> input은 단일태그타입 input[textarea] 입력멀티박스
+    콤보선택 : <select> <option>
+    구분짖기어려운것 나누기 <section>
+    영역 그룹 구분 <section> <nav> 링크로 연결된 섹터  <article> 문서로 이루어진 영역
+    시멘틱태그 : 영역을 감싸는 의미를 가진  section 태그 역할 => <header> <maim> <footer>
+    섹션태그 : 제목계층화를 다시 시작하는 블럭구분 <section>
+        그룹지정 : class  style에서 .으로 태그명과 그룹명 그분  id는 # 으로 구분 
+        개별element식별: id 그룹은 같을수 있으나 id는 달라야한다 
+        css 셀렉터: <style> h1{태그} .g1{class} #e1{id} 로 구분 
+                   속성 태그[속성="값"] a[href="a.html"]
+      컴비네이터:      자손연산자(Descendant selector) A B  스페이스로구분
+                       자식연산자(Child Selector) A>B  >로 구분
+                       이웃연산자(Adjacent sibling Selector) A+B 바로 아래태그 바로 밑 동생 
+                       주변연산자(General sibling Selector) A~B 이웃하는태그 동생들
+        찾기연산자 :  = 같은것  ~= 포함하는것 |=  hypen - 앞이 같은 것 
+                      ^=  시작문자가 같은것  *= 포함하는 것  *="  " i 대소문자구분않하고 같은것이 있는것
+                       *="  " s 대소문자구분하고 같은것이 있는것  $= 끝나는 문자가 같은 것
+                     예) a[href^="#"]
+
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--  css 파일 링크 (css파일에 있는 태그 클라스등으로 css처리)-->
+   <!-- <link rel="stylesheet" href="/css/reset.css" type="text/css">  -->
+    <link rel="stylesheet" href="/css/STYLE.css" type="text/css">
+</head>
+<body>
+    <!-- <a href="/javascript/demo.html">데모페이지</a>
+    <a href="/css/layout.html">레이아웃페이지</a> -->
+ <!-- 주석 ctrl k c  -->
+ 
+ <!-- header box -------------------------------------------------------------------------- -->
+     <header id="header">
+        <div class="content-box">
+            <h1><a href="">뉴렉쳐 강의</a></h1>
+            <section>
+                <h1 class="g1" id="e1">서두</h1>
+            
+                <nav id="main-menu">
+                    <h1>메인메뉴</h1>
+                    <ul>
+                        <li class="first"><a href="../JAVASCRIPT소스/html/목록만들기.html">학습가이드</a></li>
+                        <li><a href="/css/layout.html" class="first">강좌선택</a></li>
+                        <li class="g1">답변</li>
+                    </ul>
+                </nav>
+
+                <section>
+                    <h1>강좌검색폼</h1>
+                    <form>
+                        <fieldset>
+                            <legend>검색입력 필드</legend>
+                            <label>검색분류</label>
+                            <select>
+                                <option value="title">제목</option>
+                                <option value="writer">작성자</option>
+
+                            </select>
+
+                            <label>검색어</label>
+                            <input type="text">
+                            <input type="submit" value="검색">
+                        </fieldset>
+                    </form>
+                </section>
+                <section>
+                    <h1>회원메뉴</h1>
+                        <ul>
+                            <li>HOME</li>
+                            <li>로그인</li>
+                            <li>회원가입</li>
+                        </ul>
+                    <nav>
+                        <h1>바로가기메뉴</h1>
+                        <ul>
+                            <li>마이페이지</li>
+                            <li>고객센터</li>
+                        </ul>
+                    </nav>
+                </section>
+            </section>
+        </div>
+    </header>
+    <!-- visual box -------------------------------------------------------------------------- -->
+    <div id="visual">
+        <div class="content-box">
+            
+        </div>
+
+    </div>
+    <!-- body box -------------------------------------------------------------------------- -->
+    <div id="body">
+        <div class="content-box">
+            <aside id="aside">
+                <h1>고객센터</h1>
+                <nav>
+                    <h1>고객센터 메뉴</h1>
+                    <ul>
+                        <li>공지사항</li>
+                        <li>자주하는 질문</li>
+                        <li>수강문의</li>
+                        <li>이벤트</li>
+                    </ul>
+                </nav>
+            </aside>
+                <nav>
+                    <h1>협력업체</h1>
+                    <ul>
+                        <li>노트펍스</li>
+                        <li>나무랩연구소</li>
+                    </ul>
+                </nav>
+            <main id="main">
+                <section>
+                    <h1>공지사항</h1>
+                    <section>
+                        <h1>경로</h1>
+                
+                        <ol>
+                            <li>home</li>
+                            <li>고객센터</li>
+                            <li>공지사항</li>
+                        </ol>
+                    </section>
+            
+                    <section>
+                        <h1>공지사항 목록</h1>
+                        <table border="1">
+                            <tr>
+                                <td>번호</td>
+                                <td>제목</td>
+                                <td>작성자</td>
+                                <td>작성일자</td>
+                                <td>조회수</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td> 자바백엔드 개발자들을 위한</td>
+                                    <td>newlec</td>
+                                    <td> 2020-01-03</td>
+                                    <td>20</td>
+                            
+                            </tr>
+                            <tr>
+                                <td>2 </td>
+                                <td>유튜드 ... </td>
+                                <td>nwe</td>
+                                <td>2020-02-01</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>    
+                                <td>3</td>
+                                <td>앞으로 시작합니다</td>
+                                <td> newlect</td>
+                                <td> 2020-03-09</td>
+                                <td> 29</td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section>
+                        <h1>페이지 정보</h1>
+                        1 / 1 page
+                    </section>
+                    <nav>    
+                        <h1>페이지</h1>
+                        <div>
+                            <div>이전</div>
+
+                            <ul>
+                                <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li>
+                            </ul>
+                            <div>다음</div>
+                        </div>
+                    </nav>
+                </section>
+            </main>
+        </div>
+    </div>
+    <!-- footer box -------------------------------------------------------------------------- -->
+    <footer id="footer">
+        <div class="content-box">
+            <section>
+            <h1>footer 회사정보</h1>
+                <section>
+                    <h1>소유권자 정보</h1>
+                    <dl>
+                        <dt>주소:</dt>
+                        <dd>서울시 마포구...</dd>
+                        <dt>관리자메일:</dt>
+                        <dd>admin.hanmail.net</dd>
+                        <dt>전화번호 :</dt>
+                        <dd>070-0020-2929</dd>
+                    </dl>
+                </section>
+            
+            
+                <section>
+                    <h1>저작자연락처</h1>
+                    copy right jsjsshshs
+                </section>
+            </section>
+        </div>
+    </footer>
+    <!-- 크기와 배경색 지정 -->
+	<span style ="display:block;width:100px;height:50px;background:yellow">애국가</span>
+	
+	<!-- p=> 앞뒤로 여백한개 추가 br두개 효과,글자의 색상과 타입 지정 -->
+	<p>동해물과 <span style="color:blue; font-weight:bold">백두산이 </span>마르고 닳도록 <span style="color:red;font-style:italic">하나님이 보우하사</span> 우리나라 만세<br>
+	
+	<!-- margin, padding, 테두리색 지정 -->
+	<span style ="display:inline-block; margin:10px; padding:5px; border:dotted 5px blue; color:blue; font-weight:bold; background:pink;">무궁화 삼천리 화려강산</span> <br>
+	
+	<!-- span태그의 css지정 -->
+	<span class="box">대한사람 대한으로 길이 보전하세</span>
+</body>
+</html>

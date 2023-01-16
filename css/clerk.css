@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'LAB디지탈';
+    src: url('https://cdn.jsdeliver.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지탈.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{font-family: Times, serif; box-sizing: border-box;}
+html,body{margin: 0; background-color: black;}
+.container1{
+    width: 80%; min-width: 330px; max-width: 640px;
+    margin: 10px auto; padding: 5px 0 15px;
+    text-align: center; border: 1px solid white;
+    border-radius: 16px;
+}
+h2{color: rgb(61, 11, 198);}
+h1{color: red;}
+h1>span{display: inline-block; width: 40px;}
+button:active{
+    color: rgb(174, 13, 13);
+    background-color: darkolivegreen;
+}
+button{background-color: brown;
+        color: rgb(132, 177, 16);}
+
+        /* 선택자 
+        * 모든요소적용
+        . class 요소 적용 text class적용 => .text
+        # id 요소(고유한) 적용  #topic 
+        그룹선택자=> h1,p,div{  }  ,로구분
+        선택자 우선순위(겹칠경우) => id > class > tag선택자 */
+        /* font-family 글꼴 적용 여러개 지정가능 앞부터 우선순위적용 
+           font-size  글자크기 16px 2rem(html 지정폰트크기*2)  1.5em(상위태그크기*1.5)
+          text-align 정렬방식 left right center justify(양끝정렬)  color 글자색상
+          display => block요소를 inline요소로 inlin요소를 block요소로 변환
+             div{display:inline;}  a{display:block;} display:none =>화면보이기 숨김처리 inline-block 너비와높이를 지정할경우
+        테두리표시=> boder  span{boder:2px solid green;}
+                    boder-color  boder-width  boder-style: none(기본값) solid(직선) dotted(점선) dashed(긴점선)
+        박스영역 :콘텐츠영역 width height,안쪽여백 padding , 바깥쪽여벡 margin, 테두리 border-width
+        인라인요소는 width,height를 적용하지 못한다
+                 padding-top/right/left/bottom, margin-top/right/left/bottom 따로 지정가능 2개지정시 상하/좌우 3개지정시 상 좌우 하 적용
+                box-sizing:border-box 전체포함 높이 여백적용, content-box 컨텐츠 높이 폭 고정
+        백그라운드 : background-color,image,position(left/top/center/bottom/right조합),size(cover/contain),repeat(백그라운드이미지의 반복)
+        float 떠다니는 속성 문서의 흐름에서 제외됨 none/left/right
+        clear 플롯 적용태그아래에서 실행(float 해제 역할) none/left/right/both
+        position 배치 static 기본값  relative 문서의 흐름반영,오프셋적용  absolute 문서의흐름배제,영향을 받는 가장가까운 포지션지정요소에 적용 fixed 지정위치,스크롤이동에도 그자리
+         sticky 문서의흐름반영,스크롤동작이 존재하는 상위요소에 대해 오프셋 적용 
+         flexbox : 박스내 요소간 공간배분과 정렬하는 1차원레이아웃모델  display:flex; =>세로를 가로방향으로 표시
+                flex-direction : row; 기본값 주축=행 ->
+                                row-reverse;  주축=행 <-
+                                column; 주축=열 V
+                                column-reverse; 주축=열 ㅅ
+                주축배치방법 justify-content: center; flex컨테이너 영역내에서 요소들을 가운데 정렬, flex-start;앞쪽배치, flex-end;뒷쪽배치
+                                              space-around; 균등배치, space-between; 앞,뒤,중앙균등배치
+                교차축배치방법 align-items: flex-start; 상단, flex-end; 하단배치
+                교차축개별요소배치방법 align-self: flex-start; 상단배치,flex-end; 하단배치
+                컨테이너보다 개별항목이 클떄 줄바꿈여부 flex-wrap: nowrap; 기본값 컨테이너크기한도에서 축소배치,
+                                                                 wrap; 두행이상으로 분할 배치
+                                                                 wrap-reverse; 순서를 반대로 분할 배치
+    특성선택자
+     [class]{  } =>class인것 적용
+     [class = "it"] {    } => class값이 it 인것 
+     [class *= "it"] {   } => class값에 it가 포함된것 적용
+     [class ^= "it"] {   } => class값이 it로 시작
+     [class $= "it"] {    } => class값이 it로 끝나는것 적용
+   결합선택자 
+     자손선택자
+       input#id{    } => input 동일요소에 id가id에 적용
+       div p{       } => div 하위에 위치하는 모든 p요소 적용
+       div>p{       } => div 바로 하위에 위치하는 p요소에 적용 
+    형제결합자
+       h1~p{        } => h1뒤에오는 형제요소(동일선상요소)중 모든 p요소에 적용
+       h1+p{        } => h1 바로뒤에오는 형제p요소에 적용
+    의사클래스
+     선택자:의사클래스{    }  h1:hover{   } => 마우스가 올라오면 수행 
+          :active =>활성화
+          :focus  => 포커스
+          :disabled => 비활성화
+          :nth-child() => 형제사이에서 순서에 따라 요소를 선택 (n) =>모든것 (2n) =>짝수번째 (2n-1) =>홀수번쨰 (3) =>세번째
+          메뉴얼 https://developer.mozilla.org/ko/docs/Web/CSS/Pseudo-classes
+    의사요소
+      선택자::의사요소{   }  li::first-letter{font-size:20px;} =>li요소의 첫글자의크기를 20px(기본값16px)
+         ::after{content:" "} =>요소의 뒤에 추가
+         ::before{content:" "} => 요소의 앞에 추가
+         ::first-line => 블록레벨요소의 첫번째선에 스타일을 적용
+         ::marker => 목록기호에 스타일 적용
+         ::placeholder => 입력요소의 자리표시자에 스타일 적용
+         메뉴얼 https://developer.mozilla.org/ko/docs/Web/CSS/Pseudo-elements
+    상속속성
+      color,font-family,font-size,font-weight,text-align,cursor등
+    공용키워드
+      inherit; 상위요소 상속   border:inherit;
+      initial; 기본값 지정    font-size:initial;
+      unset ;  상속받는 요소는 상속받고 상속받지 않는 요소는 기본값 적용  width:unset;
+    z-index =>겹치는 순서 변경 ,숫자큰것이 위에 쌓인다,position이 정의된 요소에 적용됨
+         .third{z-index: 1;}
+    
+
+
+
+
+
+
+
+
